@@ -384,7 +384,7 @@ void donate(){
                     b[i].r_1 = d[a].r;
                     cout << "Enter expiry: ";
                     cin >> b[i].expiry;
-                    z++;
+                    v++;
                     break;    
             }   }
         }
@@ -397,7 +397,7 @@ void donate(){
                     b[i].r_1 = d[a].r;
                     cout << "Enter expiry: ";
                     cin>>b[1].expiry;
-                    x++;
+                    n++;
                     break;
                 }
                 
@@ -416,7 +416,7 @@ void donate(){
                     b[i].r_1 = d[a].r;
                     cout << "Enter expiry: ";
                     cin >> b[i].expiry;
-                    z++;
+                    w++;
                     break;    
             }   }
         }
@@ -429,7 +429,7 @@ void donate(){
                     b[i].r_1 = d[a].r;
                     cout << "Enter expiry: ";
                     cin>>b[1].expiry;
-                    x++;
+                    n++;
                     break;
                 }
                 
@@ -448,7 +448,7 @@ void donate(){
                     b[i].r_1 = d[a].r;
                     cout << "Enter expiry: ";
                     cin >> b[i].expiry;
-                    z++;
+                    m++;
                     break;    
             }   }
         }
@@ -461,7 +461,7 @@ void donate(){
                     b[i].r_1 = d[a].r;
                     cout << "Enter expiry: ";
                     cin>>b[1].expiry;
-                    x++;
+                    q++;
                     break;
                 }
                 
