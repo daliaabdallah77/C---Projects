@@ -78,8 +78,8 @@ class donor
                     cout<< "\n Invalid rhesius(+/-)";
                 }   
                 }
-                DNR = 1;
-                cout<<"Your DNR is: "<< DNR;
+            DNR = 1;
+            cout<<"Your DNR is: "<< DNR;
 
             }
             
