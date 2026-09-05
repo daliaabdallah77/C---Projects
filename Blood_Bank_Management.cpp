@@ -66,7 +66,7 @@ class donor
                 else{
                     cout<<"\nInvalid Type!";
                 }
-                
+            }  
             while (1)
                 {
                     cout<<"\n Enter Rhesius(+/-): ";
@@ -81,10 +81,8 @@ class donor
                 }
             DNR = 1;
             cout<<"Your DNR is: "<< DNR;
-
-            }
             
-        }
+        };
         void d_updation(){
             int choice;
             cout<<"\n Enter choice to update:\n 1. Fitness state \n 2. Contact Number";
