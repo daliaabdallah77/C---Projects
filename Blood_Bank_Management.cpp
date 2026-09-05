@@ -22,6 +22,7 @@ class hospital
          char ch;
          cout<< "Has a payment been made?(Y/N): ";
          cin>>ch;
+         
          if (ch == 'Y')
          {
            cout<<"Transaction Complete!";
@@ -326,7 +327,7 @@ void donate(){
    int a,i;
    cout<<"Enter DNR: ";
    cin >> a;
-   if (a>=1)
+   if (a>=l)
    {
     cout<<"Enter a valid DNR\n: ";
     return;
@@ -530,6 +531,12 @@ int main(){
             cout << "\n Enter choice";
             cout << "\n 1)Add donor 2)Update donor 3)Add hospital 4)Donate 5)Request Blood 6)Display available bloodpackets: ";
             cin>>ch;
+            if (cin.fail()) {
+            cin.clear(); // Resets the broken stream state
+            cin.ignore(10000, '\n'); // Flushes the garbage characters out of the buffer
+            cout << "\n Please enter a valid number.";
+            continue; // Skips the switch statement and restarts the loop safely
+            }
             switch (ch)
             {
             case 1:
