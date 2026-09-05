@@ -51,6 +51,11 @@ class donor
             cin>>contact;
             cout<<"\n Enter fitness state (1-fit, 0-unfit): ";
             cin>>fitness;
+            if (cin.fail()) {
+            cin.clear(); // Resets the broken input stream
+            cin.ignore(10000, '\n'); // Flushes the garbage out of the system
+            fitness = 0; // Forces them to be unfit if they type invalid characters
+            }
             while (1)
             {
                 cout<<"\n Enter Blood Type: ";
@@ -92,7 +97,7 @@ class donor
             {
             case 1:
                 cout << "\n Enter new fitness state: ";
-                cin>>fitness;
+                cin >> fitness;
                 break;
             case 2:
                 cout << "\n Enter new contact number: ";
@@ -385,7 +390,7 @@ void donate(){
                     b[i].r_1 = d[a].r;
                     cout << "Enter expiry: ";
                     cin >> b[i].expiry;
-                    v++;
+                    c++;
                     break;    
             }   }
         }
@@ -398,7 +403,7 @@ void donate(){
                     b[i].r_1 = d[a].r;
                     cout << "Enter expiry: ";
                     cin>>b[1].expiry;
-                    n++;
+                    v++;
                     break;
                 }
                 
@@ -471,8 +476,7 @@ void donate(){
         }
         break;
     default: break;
-    }
-    cout<<b[i].expiry;   
+    } 
 }
 
 void show(){
