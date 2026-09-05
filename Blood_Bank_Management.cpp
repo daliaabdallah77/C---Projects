@@ -66,7 +66,7 @@ class donor
                 else{
                     cout<<"\nInvalid Type!";
                 }
-                while (1)
+            while (1)
                 {
                     cout<<"\n Enter Rhesius(+/-): ";
                     cin>>r;
